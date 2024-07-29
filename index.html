@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2>Currency Conveter</h2>
+                        <hr>
+                        <div class="msg"></div>
+                        <form id="currency_form">                            
+                            <div class="my-3">
+                                <label for="">Amount</label>
+                                <input name="amount" class="form-control" type="text">
+                            </div>
+
+                            <div class="my-3">
+                                <label for="">Select currency</label>
+                                <select class="form-control" name="currency" id="">
+                                    <option value="">--select--</option>
+                                    <option value="USD">USD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="EURO">EURO</option>
+                                    <option value="RIYAL">RIYAL</option>
+                                    <option value="RUPEE">RUPEE</option>
+                                </select>
+                            </div>
+
+                            <div class="my-3">
+                                <input class="btn btn-primary w-100" value="Convert" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="msg-details"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./app/functions.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
